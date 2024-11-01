@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+/* 
+// HEADINGS
+Oswald == Big/main headings
+Roboto == small headings
+Playfair == alternate heading
+
+// PARAGRAPHS
+Poppins == Paragraphs
+Quicksand == Qoutes
+Montserat == alternate paragraph
+*/
+:root {
+	--bg-colour: #000;
+	--alt-bg-colour: #ffd700;
+    --alt-txt-colour: #fff;
+	--main-heading: "Oswald", sans-serif;
+	--small-heading: "Roboto", sans-serif;
+	--alt-heading: "Playfair Display", serif;
+	--main-paragraph: "Poppins", system-ui;
+	--short-paragraph: "Quicksand", system-ui;
+	--alt-paragraph: "Montserrat", system-ui;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-colour);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-colour);
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 2rem;
+    font-family: var(--main-heading);
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--alt-bg-colour);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background: var(--alt-bg-colour);
+    color: var(--bg-colour);
+    letter-spacing: 2px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--alt-bg-colour);
+    border-radius: 8px;
+}
+
+.hero-content {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: var(--small-heading);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--main-paragraph);
+    letter-spacing: 1px;
+}
+
+.cta-button {
+    font-size: 2rem;
+    background-color: var(--bg-colour);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--alt-txt-colour);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+a span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}  
+a span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+a:hover span {
+	padding-right: 25px;
+}
+a:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.featured-services {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-services h2 {
+    font-size: 3rem;
+    font-family: var(--alt-heading);
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.service-cards {
+    display: flex;
+}
+
+.card {
+    width: 30%;
+    height: 250px;
+    margin: auto;
+    background: var(--alt-txt-colour);
+    box-shadow: 1px 1px 30px var(--bg-colour);
+    align-items: center;
+    border-radius: 10%;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card h3 {
+    font-size: 2rem;
+    font-family: var(--small-heading);
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.card p {
+    font-size: 1.5rem;
+    font-family: var(--alt-paragraph);
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.card ul li{
+    font-size: 1rem;
+    font-family: var(--short-paragraph);
+    font-weight: 900;
+    list-style: circle;
+}
+
+.product-grid .product {
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
+.catalogue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.catalogue h2 {
+    font-size: 3rem;
+    font-family: var(--alt-heading);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+  
+.mySlides {
+    display: none;
+}
+
+  /* Style for each slide image*/
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    font-family: var(--alt-heading);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact p {
+    font-size: 2rem;
+    font-family: var(--alt-paragraph);
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+/* Styles for Service Cards */
+.services-hero-content {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.services-hero-content h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: var(--small-heading);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services-hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--main-paragraph);
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+
+.hero-content-vm {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission,
+.vision {
+    box-shadow: 1px 1px 1px 1px var(--bg-colour);
+}
+
+.mission h3,
+.vision h3 {
+    font-size: 2rem;
+    font-family: var(--alt-heading);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.mission p,
+.vision p {
+    font-size: 1.5rem;
+    font-family: var(--short-paragraph);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service-card .bx {
+    font-size: 2rem;
+    color: var(--alt-bg-colour);
+}
+.services h2 {
+    font-size: 3rem;
+    font-family: var(--alt-heading);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.service-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    flex: 1 1 calc(33% - 40px);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ffcc00;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-family: var(--alt-heading);
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    font-family: var(--alt-paragraph);
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    font-family: var(--small-heading);
+    font-size: 1rem;
+    font-weight: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+.contact-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-cta h2 {
+    font-size: 2rem;
+    font-family: var(--alt-heading);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.contact-cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-cta-grid a {
+    width: fit-content;
+}
+
+/* catalogue */
+.catalogue h1 {
+    font-size: 3rem;
+    font-family: var(--alt-heading);
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+
+/* Contact Us Page */
+#contact-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contact-page h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: var(--small-heading);
+}
+
+#contact-page p {
+    width: 60%;
+    margin: auto;
+    font-size: 2rem;
+    font-family: var(--alt-paragraph);
+    font-weight: 100;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.cta-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebc57;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: var(--bg-colour);
+    color: var(--alt-bg-colour);
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    font-family: var(--alt-paragraph);
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a{
+    color: var(--alt-bg-colour);
+    font-size: 2.5rem;
+    font-family: var(--alt-paragraph);
+    font-weight: 100;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* For Tablets and Small Laptops */
+@media only screen and (max-width: 1024px) {
+    header nav ul li a {
+        font-size: 1.5rem;  /* Resize navigation font */
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;  /* Resize hero section title */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem; /* Resize hero section paragraph */
+    }
+
+    .cta-button {
+        font-size: 1.5rem;  /* Resize call-to-action button */
+    }
+
+    .service-cards {
+        flex-direction: column;  /* Stack service cards vertically */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 80%;  /* Make service cards wider for better readability */
+        height: auto;
+    }
+}
+
+/* For Mobile Devices */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        display: block; /* Stack navigation links vertically */
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;  /* Resize navigation font for mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;  /* Further reduce hero title */
+    }
+
+    .hero-content p {
+        font-size: 1rem;  /* Further reduce hero paragraph */
+    }
+
+    .cta-button {
+        font-size: 1.2rem;  /* Further reduce call-to-action button */
+    }
+
+    .featured-services h2, 
+    .catalogue h2, 
+    .contact h2 {
+        font-size: 2rem;  /* Resize section titles */
+    }
+
+    .slideshow-container {
+        height: 300px;  /* Reduce slideshow height for mobile */
+    }
+
+    .card {
+        width: 100%;  /* Make service cards full width */
+        height: auto;
+    }
+
+    .service-card {
+        flex: 1 1 100%;
+    }
+
+    footer p {
+        font-size: 0.8rem;  /* Reduce footer text */
+    }
+
+    footer ul li a {
+        font-size: 2rem;  /* Resize social media icons */
+    }
+}
+
+/* For Small Mobile Devices */
+@media only screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;  /* Resize hero title for very small screens */
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;  /* Resize hero paragraph */
+    }
+
+    .cta-button {
+        font-size: 1rem;  /* Resize call-to-action button */
+    }
+
+    .slideshow-container {
+        height: 250px;  /* Further reduce slideshow height */
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-cards {
+        gap: 15px;  /* Reduce spacing between service cards */
+    }
+}

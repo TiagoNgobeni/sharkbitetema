@@ -1,0 +1,69 @@
+{
+    "products": [
+        {
+            "name": "Sharkbitetema Headwear",
+            "price": "R170",
+            "image": "images/headwear/headwear1.jpg"
+        },
+        {
+            "name": "Sharkbitetema Headwear: Vregar Edition",
+            "price": "R170",
+            "image": "images/headwear/headwear2.jpg"
+        },
+        {
+            "name": "Sharkbitetema Headwear",
+            "price": "R170",
+            "image": "images/headwear/headwear3.jpg"
+        },
+        {
+            "name": "Sharkbitetema Headwear",
+            "price": "R170",
+            "image": "images/headwear/headwear4.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt",
+            "price": "R150",
+            "image": "images/shirts/SBT-shirt1.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt",
+            "price": "R200",
+            "image": "images/shirts/SBT-shirt2.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt",
+            "price": "R200",
+            "image": "images/shirts/SBT-shirt3.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Vregar Edition",
+            "price": "R200",
+            "image": "images/shirts/SBT-shirt4.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Vregar Edition",
+            "price": "R200",
+            "image": "images/shirts/SBT-shirt5.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Army C Edition",
+            "price": "R200",
+            "image": "images/shirts/SBT-shirt6.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Army C Edition",
+            "price": "R200",
+            "image": "images/shirts/SBT-shirt7.jpg"
+        },
+        {
+            "name": "Sharkbitetema Sweater",
+            "price": "R350",
+            "image": "images/sweater/SBT-sweater3.jpg"
+        },
+        {
+            "name": "Sharkbitetema Sweater",
+            "price": "R350",
+            "image": "images/sweater/SBT-sweater1.jpg"
+        }
+    ]
+}
