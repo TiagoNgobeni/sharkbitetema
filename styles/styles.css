@@ -315,10 +315,11 @@ a:hover span:after {
 }
 
 .hero-content-vm {
-    display: flex;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+    gap: 50px;
 }
 
 .mission,
@@ -351,16 +352,17 @@ a:hover span:after {
     gap: 10px;
 }
 
-.service-card .bx {
-    font-size: 2rem;
-    color: var(--alt-bg-colour);
-}
 .services h2 {
     font-size: 3rem;
     font-family: var(--alt-heading);
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.service-card .bx {
+    font-size: 2rem;
+    color: var(--alt-bg-colour);
 }
 .service-grid {
     display: flex;
@@ -404,7 +406,7 @@ table td {
     letter-spacing: 1px;
 }
 
-.contact-cta {
+.services-cta {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -412,25 +414,22 @@ table td {
     gap: 20px;
 }
 
-.contact-cta h2 {
-    font-size: 2rem;
+.services-cta h2 {
+    font-size: 3rem;
     font-family: var(--alt-heading);
     font-weight: 900;
-    text-transform: uppercase;
+}
+.services-cta-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.contact-cta-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-}
-
-.contact-cta-grid a {
-    width: fit-content;
-}
 
 /* catalogue */
-.catalogue h1 {
+.catalogue h2 {
     font-size: 3rem;
     font-family: var(--alt-heading);
     font-weight: 900;
@@ -526,7 +525,7 @@ footer {
 
 footer p {
     font-size: 1rem;
-    font-family: var(--alt-paragraph);
+    font-family: var(--small-heading);
     font-weight: 100;
     letter-spacing: 1px;
 }
@@ -607,7 +606,10 @@ footer ul li a{
 
     .featured-services h2, 
     .catalogue h2, 
-    .contact h2 {
+    .contact h2, 
+    .services-hero-content h2,
+    .services h2,
+    .services-cta h2 {
         font-size: 2rem;  /* Resize section titles */
     }
 
@@ -618,6 +620,23 @@ footer ul li a{
     .card {
         width: 100%;  /* Make service cards full width */
         height: auto;
+    }
+
+    .hero-content-vm {
+        grid-template-columns: 1fr;
+    }
+
+    .card h3,
+    .card p,
+    .mission h3,
+    .vision h3,
+    .mission p,
+    .vision p {
+        font-size: 1rem;
+    }
+
+    .services-hero-content p {
+        font-size: 15px;
     }
 
     .service-card {

@@ -30,7 +30,7 @@
         <p>For inquiries or to request a quote, feel free to reach out to us via email or WhatsApp.</p>
 
         <!-- Contact Form -->
-        <form id="contact-form" action="mailto:ngobenitiago.com" method="post" enctype="text/plain">
+        <!-- <form id="contact-form" action="mailto:ngobenitiago.com" method="post" enctype="text/plain">
             <div class="form-group">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required>
@@ -47,21 +47,49 @@
             </div>
 
             <button type="submit" class="cta-button">Send Email</button>
-        </form>
+        </form> -->
+
+        <form id="contact-form" action="https://formspree.io/f/xnnqvnll" method="post">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required />
+            </div> 
+    
+    
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+    
+            <div class="form-group">
+              <label for="message">Message</label>
+    
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+    
+            <button type="submit"
+     class="cta-button" onclick="sendEmail()">
+              Send Email
+            </button>
+          </form>
 
         <h2>Or, Contact Us on WhatsApp</h2>
 
         <!-- WhatsApp Contact Button -->
-        <a href="https://wa.me/27635848285?text=Hello,%20I%20would%20like%20to%20request%20a%20quote" class="cta-button whatsapp-button">Contact Us on WhatsApp</a>
+        <a href="https://wa.me/27763066328?text=Hello,%20I%20would%20like%20to%20request%20a%20quote" class="cta-button whatsapp-button">Contact Us on WhatsApp</a>
     </section>
 
     <footer>
-        <p>&copy; 2024 Sharkbite Matema. All rights reserved.</p>
+        <p>&copy; 2024 Sharkbitetema. All rights reserved.</p>
         <ul class="social-media">
-            <li><a href="#" class='bx bxl-facebook-circle'></a></li>
-            <li><a href="#" class='bx bxl-instagram-alt'></a></li>
-            <li><a href="#" class='bx bxl-twitter'></a></li>
+            <li><a href="https://web.facebook.com/artelkan" target="_blank" class='bx bxl-facebook-circle'></a></li>
+            <li><a href="https://www.instagram.com/sharkbite_tema/#" target="_blank" class='bx bxl-instagram-alt'></a></li>
+            <li><a href="https://x.com/SharkbiteT" target="_blank" class='bx bxl-twitter'></a></li>
         </ul>
     </footer>
+    
+
+    <script src="scripts/scripts.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
 </body>
 </html>

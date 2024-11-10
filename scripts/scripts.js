@@ -46,19 +46,3 @@ function showSlides() {
     // Change the slide every 3 seconds
     setTimeout(showSlides, 3000); // 3000 milliseconds = 3 seconds
 }
-
-        // Add this JavaScript code for the animations
-        function reveal() {
-            let heroContent = document.querySelector('.hero-content');
-            let serviceCards = document.querySelector('.service-cards');
-            let fadeInElements = document.querySelectorAll('.fade-in');
-
-            heroContent.classList.add('show');
-            serviceCards.classList.add('show');
-
-            fadeInElements.forEach(element => {
-                element.classList.add('show');
-            });
-        }
-
-        window.addEventListener('load', reveal);

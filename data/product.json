@@ -12,17 +12,17 @@
         },
         {
             "name": "Sharkbitetema Headwear",
-            "price": "R170",
+            "price": "R400",
             "image": "images/headwear/headwear3.jpg"
         },
         {
             "name": "Sharkbitetema Headwear",
-            "price": "R170",
+            "price": "R400",
             "image": "images/headwear/headwear4.jpg"
         },
         {
             "name": "Sharkbitetema T-shirt",
-            "price": "R150",
+            "price": "R250",
             "image": "images/shirts/SBT-shirt1.jpg"
         },
         {
@@ -52,17 +52,17 @@
         },
         {
             "name": "Sharkbitetema T-shirt: Army C Edition",
-            "price": "R200",
+            "price": "R250",
             "image": "images/shirts/SBT-shirt7.jpg"
         },
         {
             "name": "Sharkbitetema Sweater",
-            "price": "R350",
+            "price": "R450",
             "image": "images/sweater/SBT-sweater3.jpg"
         },
         {
             "name": "Sharkbitetema Sweater",
-            "price": "R350",
+            "price": "R450",
             "image": "images/sweater/SBT-sweater1.jpg"
         }
     ]
