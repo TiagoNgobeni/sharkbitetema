@@ -29,13 +29,17 @@ Montserat == alternate paragraph
 	--short-paragraph: "Quicksand", system-ui;
 	--alt-paragraph: "Montserrat", system-ui;
 }
-
+/* ************************************************************************************************************************ */
+/********************************************************** INDEX PAGE ******************************************************/
+/* ************************************************************************************************************************ */
 body {
     width: 100%;
     height: auto;
     background-color: var(--bg-colour);
 }
-
+/* ************ */
+/**** HEADER ****/
+/* ************ */
 header {
     width: 100%;
     height: auto;
@@ -47,19 +51,16 @@ header {
     padding: 10px 0;
     gap: 10px;
 }
-
 .logo img {
     width: 100px;
     height: 100px;
     border-radius: 30%;
     cursor: pointer;
 }
-
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
-
 nav ul li a {
     font-size: 2rem;
     font-family: var(--main-heading);
@@ -71,21 +72,24 @@ nav ul li a {
     cursor: pointer;
     transition: all .7s ease-in-out;
 }
-
 nav ul li a:hover,
 nav ul li a:active {
     background: var(--alt-bg-colour);
     color: var(--bg-colour);
     letter-spacing: 2px;
 }
-
+/* ************ */
+/**** ALL THE SECTIONS ****/
+/* ************ */
 section {
     padding: 20px;
     margin: 20px;
     background-color: var(--alt-bg-colour);
     border-radius: 8px;
 }
-
+/* ************ */
+/**** HERO SECTION ****/
+/* ************ */
 .hero-content {
     width: 60%;
     margin: auto;
@@ -96,7 +100,6 @@ section {
     justify-content: center;
     gap: 10px;
 }
-
 .hero-content h1 {
     font-size: 5rem;
     font-weight: 900;
@@ -104,14 +107,12 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 .hero-content p {
     font-size: 1.5rem;
     font-weight: 300;
     font-family: var(--main-paragraph);
     letter-spacing: 1px;
 }
-
 .cta-button {
     font-size: 2rem;
     background-color: var(--bg-colour);
@@ -121,7 +122,6 @@ section {
     text-decoration: none;
     letter-spacing: 2px;
 }
-
 a span {
 	cursor: pointer;
 	display: inline-block;
@@ -143,13 +143,9 @@ a:hover span:after {
 	opacity: 1;
 	right: 0;
 }
-
-.product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
+/* ******************** */
+/**** INDEX SERVICES ****/
+/* ******************** */
 .featured-services {
     display: flex;
     flex-direction: column;
@@ -157,7 +153,6 @@ a:hover span:after {
     align-items: center;
     justify-content: center;
 }
-
 .featured-services h2 {
     font-size: 3rem;
     font-family: var(--alt-heading);
@@ -166,11 +161,9 @@ a:hover span:after {
     text-align: center;
     letter-spacing: 2px;
 }
-
 .service-cards {
     display: flex;
 }
-
 .card {
     width: 30%;
     height: 250px;
@@ -184,14 +177,12 @@ a:hover span:after {
     gap: 10px;
     flex-direction: column;
 }
-
 .card h3 {
     font-size: 2rem;
     font-family: var(--small-heading);
     font-weight: 900;
     letter-spacing: 2px;
 }
-
 .card p {
     font-size: 1.5rem;
     font-family: var(--alt-paragraph);
@@ -199,40 +190,32 @@ a:hover span:after {
     text-align: center;
     letter-spacing: 1px;
 }
-
 .card ul li{
     font-size: 1rem;
     font-family: var(--short-paragraph);
     font-weight: 900;
     list-style: circle;
 }
-
-.product-grid .product {
-    flex: 1 1 calc(33.333% - 40px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #fff;
-    letter-spacing: 1px;
-}
-
-.catalogue {
+/* ******************** */
+/**** INDEX CATALOGUE ****/
+/* ******************** */
+.index-catalogue {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-
-.catalogue h2 {
+.index-catalogue h2 {
     font-size: 3rem;
     font-family: var(--alt-heading);
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
-/* Slideshow container */
+/* ************************** */
+/**** Slideshow container *****/
+/* ************************** */
 .slideshow-container {
     position: relative;
     width: 100%;
@@ -240,37 +223,30 @@ a:hover span:after {
     margin: auto;
     overflow: hidden;
 }
-  
 .mySlides {
     display: none;
 }
-
-  /* Style for each slide image*/
+/* ********************************* */
+/**** Style for each slide image *****/
+/* ********************************* */
 .mySlides img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-  
 .product img {
     max-width: 100%;
     height: auto;
 }
-
-
-
-
-
-
-
-/* Contact Section */
+/* ******************** */
+/**** INDEX CONTACT *****/
+/* ******************** */
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
-
 .contact h2 {
     font-size: 3rem;
     font-family: var(--alt-heading);
@@ -278,15 +254,15 @@ a:hover span:after {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 .contact p {
     font-size: 2rem;
     font-family: var(--alt-paragraph);
     font-weight: 100;
     letter-spacing: 1px;
 }
-
-/* Styles for Service Cards */
+/* ******************** */
+/****** SERVICES ********/
+/* ******************** */
 .services-hero-content {
     width: 70%;
     margin: auto;
@@ -297,7 +273,6 @@ a:hover span:after {
     justify-content: center;
     gap: 10px;
 }
-
 .services-hero-content h2 {
     font-size: 3rem;
     font-weight: 900;
@@ -305,7 +280,6 @@ a:hover span:after {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 .services-hero-content p {
     font-size: 1.5rem;
     font-weight: 300;
@@ -313,7 +287,6 @@ a:hover span:after {
     letter-spacing: 1px;
     margin: 15px 0;
 }
-
 .hero-content-vm {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -321,12 +294,10 @@ a:hover span:after {
     justify-content: center;
     gap: 50px;
 }
-
 .mission,
 .vision {
     box-shadow: 1px 1px 1px 1px var(--bg-colour);
 }
-
 .mission h3,
 .vision h3 {
     font-size: 2rem;
@@ -335,7 +306,6 @@ a:hover span:after {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 .mission p,
 .vision p {
     font-size: 1.5rem;
@@ -343,7 +313,6 @@ a:hover span:after {
     font-weight: 300;
     letter-spacing: 1px;
 }
-
 .services {
     display: flex;
     flex-direction: column;
@@ -351,7 +320,6 @@ a:hover span:after {
     justify-content: center;
     gap: 10px;
 }
-
 .services h2 {
     font-size: 3rem;
     font-family: var(--alt-heading);
@@ -359,7 +327,6 @@ a:hover span:after {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 .service-card .bx {
     font-size: 2rem;
     color: var(--alt-bg-colour);
@@ -370,7 +337,6 @@ a:hover span:after {
     flex-wrap: wrap;
     gap: 20px;
 }
-
 .service-card {
     flex: 1 1 calc(33% - 40px);
     background-color: #fff;
@@ -379,25 +345,21 @@ a:hover span:after {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .service-card h3 {
     font-size: 1.5rem;
     font-family: var(--alt-heading);
     font-weight: 900;
     letter-spacing: 2px;
 }
-
 .service-card p {
     font-size: 1rem;
     font-family: var(--alt-paragraph);
     font-weight: 100;
     letter-spacing: 1px;
 }
-
 table {
     width: 100%;
 }
-
 table td {
     font-family: var(--small-heading);
     font-size: 1rem;
@@ -405,7 +367,6 @@ table td {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
 }
-
 .services-cta {
     display: flex;
     flex-direction: column;
@@ -413,7 +374,6 @@ table td {
     justify-content: center;
     gap: 20px;
 }
-
 .services-cta h2 {
     font-size: 3rem;
     font-family: var(--alt-heading);
@@ -426,34 +386,45 @@ table td {
     align-items: center;
     justify-content: center;
 }
-
-
-/* catalogue */
+/* ******************** */
+/****** CATALOGUE *******/
+/* ******************** */
 .catalogue h2 {
     font-size: 3rem;
     font-family: var(--alt-heading);
     font-weight: 900;
     letter-spacing: 2px;
+    text-align: center;
 }
-
-
-/* Contact Us Page */
-#contact-page {
-    width: 100%;
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product-grid .product {
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+/* ******************** */
+/******* CONTACT ********/
+/* ******************** */
+.contact-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-
-#contact-page h1 {
-    font-size: 5rem;
+.contact-page h2 {
+    font-size: 3rem;
     font-weight: 900;
     font-family: var(--small-heading);
 }
-
-#contact-page p {
+.contact-page p {
     width: 60%;
     margin: auto;
     font-size: 2rem;
@@ -461,23 +432,19 @@ table td {
     font-weight: 100;
     text-align: center;
 }
-
 form {
     width: 50%;
-    margin: 0 auto;
+    margin: auto;
 }
-
 .form-group {
     margin-bottom: 20px;
     text-align: left;
 }
-
 label {
     display: block;
     font-size: 16px;
     margin-bottom: 8px;
 }
-
 input, textarea {
     width: 100%;
     padding: 10px;
@@ -485,17 +452,14 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 textarea {
     resize: vertical;
 }
-
 button.cta-button {
     width: 100%;
     padding: 15px;
     font-size: 18px;
 }
-
 .whatsapp-button {
     display: inline-block;
     background-color: #25D366;
@@ -507,11 +471,12 @@ button.cta-button {
     font-size: 18px;
     transition: background-color 0.3s ease;
 }
-
 .whatsapp-button:hover {
     background-color: #1ebc57;
 }
-
+/* ******************** */
+/******** FOOTER ********/
+/* ******************** */
 footer {
     display: flex;
     flex-direction: column;
@@ -522,21 +487,18 @@ footer {
     color: var(--alt-bg-colour);
     padding-bottom: 10px;
 }
-
 footer p {
     font-size: 1rem;
     font-family: var(--small-heading);
     font-weight: 100;
     letter-spacing: 1px;
 }
-
 footer ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-
 footer ul li a{
     color: var(--alt-bg-colour);
     font-size: 2.5rem;
@@ -612,6 +574,10 @@ footer ul li a{
     .services-cta h2 {
         font-size: 2rem;  /* Resize section titles */
     }
+    
+    .contact-form h3 {
+        font-size: 1rem;
+    }
 
     .slideshow-container {
         height: 300px;  /* Reduce slideshow height for mobile */
@@ -635,6 +601,10 @@ footer ul li a{
         font-size: 1rem;
     }
 
+    .contact-page p {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
     .services-hero-content p {
         font-size: 15px;
     }
