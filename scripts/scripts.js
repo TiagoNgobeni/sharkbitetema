@@ -1,3 +1,21 @@
+const header = document.querySelector("header");
+window.addEventListener ("scroll", function() {
+    header.classList.toggle ("sticky", window.scrollY > 100)
+});
+
+let menu = document.querySelector('.bx');
+let navlist = document.querySelector('.navlist');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navlist.classList.toggle('open');
+};
+
+window.onscroll = () => {
+    menu.classList.remove('bx-x');
+    navlist.classList.remove('open');
+};
+
 // Load featured products dynamically
 fetch('data/product.json')
 .then(response => response.json())
@@ -8,9 +26,9 @@ fetch('data/product.json')
     data.products.forEach(product => {
         let productHTML = `
             <div class="product">
+            <h3>${product.name}</h3>
                 <img src="${product.image}" alt="${product.name}">
-                <h3>${product.name}</h3>
-                <p>${product.price}</p>
+                <h1>${product.price}</h1>
             </div>
         `;
         
@@ -24,25 +42,3 @@ fetch('data/product.json')
     });
 })
 .catch(error => console.log('Error loading products: ', error));
-
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let slides = document.getElementsByClassName("mySlides");
-
-    // Hide all slides
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-
-    // Increment the slide index, or reset to 1 if it's greater than the number of slides
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-
-    // Show the current slide
-    slides[slideIndex-1].style.display = "block";  
-
-    // Change the slide every 3 seconds
-    setTimeout(showSlides, 3000); // 3000 milliseconds = 3 seconds
-}

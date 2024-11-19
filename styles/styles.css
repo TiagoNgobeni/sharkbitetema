@@ -42,46 +42,64 @@ body {
 /* ************ */
 header {
     width: 100%;
-    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: var(--bg-colour);
-    padding: 10px 0;
-    gap: 10px;
+    justify-content: space-between;
+    background: transparent;
+    padding: 5px 4%;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+    background-color: var(--alt-bg-colour);
+}
+header.sticky {
+    padding: 5px 5%;
+    background: var(--bg-colour);
+    border-bottom: 1px solid var(--alt-txt-colour);
+}
+header.sticky a:hover{
+    color: #ffd700;
 }
 .logo img {
-    width: 100px;
-    height: 100px;
-    border-radius: 30%;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
 }
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.navlist {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
 }
-nav ul li a {
-    font-size: 2rem;
-    font-family: var(--main-heading);
-    font-weight: 900;
+.navlist a {
+    color: var(--alt-txt-colour);
+    font-size: var(--p-font);
+    font-weight: 600;
+    text-align: center;
     text-transform: uppercase;
-    color: var(--alt-bg-colour);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all .7s ease-in-out;
+    padding: 10px;
+    transition: all ease .40s;
 }
-nav ul li a:hover,
-nav ul li a:active {
-    background: var(--alt-bg-colour);
+.navlist a:hover {
     color: var(--bg-colour);
-    letter-spacing: 2px;
+    border-top: 5px solid var(--alt-txt-colour);
+    border-bottom: 5px solid var(--alt-txt-colour);
+    transition: all ease 0.10s;
+}
+#burger-menu {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
 }
 /* ************ */
 /**** ALL THE SECTIONS ****/
 /* ************ */
 section {
+    position: relative;
+    top: 55px;
     padding: 20px;
     margin: 20px;
     background-color: var(--alt-bg-colour);
@@ -103,7 +121,7 @@ section {
 .hero-content h1 {
     font-size: 5rem;
     font-weight: 900;
-    font-family: var(--small-heading);
+    font-family: var(--main-heading);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -144,126 +162,9 @@ a:hover span:after {
 	right: 0;
 }
 /* ******************** */
-/**** INDEX SERVICES ****/
+/**** INDEX ABOUT ****/
 /* ******************** */
-.featured-services {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-}
-.featured-services h2 {
-    font-size: 3rem;
-    font-family: var(--alt-heading);
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2px;
-}
-.service-cards {
-    display: flex;
-}
-.card {
-    width: 30%;
-    height: 250px;
-    margin: auto;
-    background: var(--alt-txt-colour);
-    box-shadow: 1px 1px 30px var(--bg-colour);
-    align-items: center;
-    border-radius: 10%;
-    justify-content: center;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-}
-.card h3 {
-    font-size: 2rem;
-    font-family: var(--small-heading);
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-.card p {
-    font-size: 1.5rem;
-    font-family: var(--alt-paragraph);
-    font-weight: 100;
-    text-align: center;
-    letter-spacing: 1px;
-}
-.card ul li{
-    font-size: 1rem;
-    font-family: var(--short-paragraph);
-    font-weight: 900;
-    list-style: circle;
-}
-/* ******************** */
-/**** INDEX CATALOGUE ****/
-/* ******************** */
-.index-catalogue {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.index-catalogue h2 {
-    font-size: 3rem;
-    font-family: var(--alt-heading);
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-/* ************************** */
-/**** Slideshow container *****/
-/* ************************** */
-.slideshow-container {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    margin: auto;
-    overflow: hidden;
-}
-.mySlides {
-    display: none;
-}
-/* ********************************* */
-/**** Style for each slide image *****/
-/* ********************************* */
-.mySlides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.product img {
-    max-width: 100%;
-    height: auto;
-}
-/* ******************** */
-/**** INDEX CONTACT *****/
-/* ******************** */
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-.contact h2 {
-    font-size: 3rem;
-    font-family: var(--alt-heading);
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.contact p {
-    font-size: 2rem;
-    font-family: var(--alt-paragraph);
-    font-weight: 100;
-    letter-spacing: 1px;
-}
-/* ******************** */
-/****** SERVICES ********/
-/* ******************** */
-.services-hero-content {
+.about-content {
     width: 70%;
     margin: auto;
     display: flex;
@@ -273,21 +174,21 @@ a:hover span:after {
     justify-content: center;
     gap: 10px;
 }
-.services-hero-content h2 {
+.about-content h2 {
     font-size: 3rem;
     font-weight: 900;
     font-family: var(--small-heading);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.services-hero-content p {
+.about-content p {
     font-size: 1.5rem;
     font-weight: 300;
     font-family: var(--main-paragraph);
     letter-spacing: 1px;
     margin: 15px 0;
 }
-.hero-content-vm {
+.about-content-vm {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -313,6 +214,88 @@ a:hover span:after {
     font-weight: 300;
     letter-spacing: 1px;
 }
+/* ******************** */
+/**** INDEX SERVICES ****/
+/* ******************** */
+.featured-services {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.featured-services h2 {
+    font-size: 3rem;
+    font-family: var(--small-heading);
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+}
+.card {
+    width: 30%;
+    height: 250px;
+    margin: auto;
+    background: var(--alt-txt-colour);
+    box-shadow: 1px 1px 30px var(--bg-colour);
+    align-items: center;
+    border-radius: 10%;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.card h3 {
+    font-size: 2rem;
+    font-family: var(--alt-heading);
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.card p {
+    font-size: 1.5rem;
+    font-family: var(--alt-paragraph);
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.card ul li{
+    font-size: 1rem;
+    font-family: var(--short-paragraph);
+    font-weight: 900;
+    list-style: circle;
+}
+/* ******************** */
+/**** INDEX CONTACT *****/
+/* ******************** */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.contact h2 {
+    font-size: 3rem;
+    font-family: var(--small-heading);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contact p {
+    font-size: 2rem;
+    font-family: var(--alt-paragraph);
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 1px;
+}
+/* ******************** */
+/****** SERVICES ********/
+/* ******************** */
 .services {
     display: flex;
     flex-direction: column;
@@ -322,7 +305,7 @@ a:hover span:after {
 }
 .services h2 {
     font-size: 3rem;
-    font-family: var(--alt-heading);
+    font-family: var(--small-heading);
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -352,7 +335,7 @@ a:hover span:after {
     letter-spacing: 2px;
 }
 .service-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: var(--alt-paragraph);
     font-weight: 100;
     letter-spacing: 1px;
@@ -376,7 +359,7 @@ table td {
 }
 .services-cta h2 {
     font-size: 3rem;
-    font-family: var(--alt-heading);
+    font-family: var(--small-heading);
     font-weight: 900;
 }
 .services-cta-grid {
@@ -389,20 +372,35 @@ table td {
 /* ******************** */
 /****** CATALOGUE *******/
 /* ******************** */
+.catalogue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
 .catalogue h2 {
     font-size: 3rem;
-    font-family: var(--alt-heading);
+    font-family: var(--small-heading);
     font-weight: 900;
     letter-spacing: 2px;
     text-align: center;
 }
 .product-grid {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+.product-grid img {
+    width: 100%;
+}
 .product-grid .product {
-    flex: 1 1 calc(33.333% - 40px);
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    flex: 1 1 calc(30% - 40px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     border-radius: 8px;
@@ -478,6 +476,8 @@ button.cta-button {
 /******** FOOTER ********/
 /* ******************** */
 footer {
+    position: relative;
+    top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -527,13 +527,13 @@ footer ul li a{
     }
 
     .service-cards {
-        flex-direction: column;  /* Stack service cards vertically */
+        flex-direction: row;
         align-items: center;
         gap: 20px;
     }
 
     .card {
-        width: 80%;  /* Make service cards wider for better readability */
+        /* width: 80%; */
         height: auto;
     }
 }
@@ -541,17 +541,39 @@ footer ul li a{
 /* For Mobile Devices */
 @media only screen and (max-width: 768px) {
     header {
+        flex-direction: row;
+    }
+    #burger-menu {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navlist {
+        width: 100%;
+        height: 70vh;
+        position: absolute;
+        left: 0;
+        top: 2000px;
+        display: flex;
         flex-direction: column;
-    }
-
-    header nav ul li {
-        display: block; /* Stack navigation links vertically */
+        /* height: 450px; */
+        background: var(--bg-colour);
+        padding: 20px 0;
         text-align: center;
-        margin: 10px 0;
+        transition: all .50s ease;
     }
-
-    nav ul li a {
-        font-size: 1.2rem;  /* Resize navigation font for mobile */
+    .navlist a {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+    .navlist.open {
+        top: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
     }
 
     .hero-content h1 {
@@ -565,13 +587,18 @@ footer ul li a{
     .cta-button {
         font-size: 1.2rem;  /* Further reduce call-to-action button */
     }
+    
+    .about-content-vm {
+        grid-template-columns: 1fr;
+    }
 
     .featured-services h2, 
     .catalogue h2, 
     .contact h2, 
     .services-hero-content h2,
     .services h2,
-    .services-cta h2 {
+    .services-cta h2,
+    .about-content h2 {
         font-size: 2rem;  /* Resize section titles */
     }
     
@@ -584,12 +611,8 @@ footer ul li a{
     }
 
     .card {
-        width: 100%;  /* Make service cards full width */
+        width: 35%;
         height: auto;
-    }
-
-    .hero-content-vm {
-        grid-template-columns: 1fr;
     }
 
     .card h3,
@@ -597,7 +620,8 @@ footer ul li a{
     .mission h3,
     .vision h3,
     .mission p,
-    .vision p {
+    .vision p,
+    .about-content p {
         font-size: 1rem;
     }
 

@@ -1,72 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Contact Us - Sharkbitetema</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Contact Us - Sharkbitetema</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.jpg" alt="Sharkbite Tema logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Contact Us Section -->
-    <section id="contact-page" class="contact-page">
-        <h2>Contact Us</h2>
-        <p>For inquiries or to request a quote, feel free to reach out to us via email or WhatsApp.</p>
-
-        <form id="contact-form" action="https://formspree.io/f/mgveyoow" method="post">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" required />
-            </div> 
+  <header>
+    <div class="logo">
+        <a href="index.html">
+          <img src="images/Logo.png" alt="Sharkbitetema logo">
+        </a>
+    </div>
+    <div class="bx bx-menu" id="burger-menu"></div>
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+  <!-- Contact Us Section -->
+  <section id="contact-page" class="contact-page">
+    <h2>Contact Us</h2>
+      <p>For inquiries or to request a quote, feel free to reach out to us via email or WhatsApp.</p>
+      <form id="contact-form" action="https://formspree.io/f/mgveyoow" method="post">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+          </div> 
     
-            <div class="form-group">
-              <label for="email">Your Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
     
-            <div class="form-group">
-              <label for="message">Message</label>
+          <div class="form-group">
+            <label for="message">Message</label>
+
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
     
-              <textarea id="message" name="message" rows="6" required></textarea>
-            </div>
-    
-            <button type="submit"  class="cta-button" onclick="sendEmail()">
-              Send Email
-            </button>
-          </form>
+          <button type="submit"  class="cta-button" onclick="sendEmail()">
+            Send Email
+          </button>
+        </form>
 
-        <h3>Or, Contact Us on WhatsApp</h3>
+      <h3>Or, Contact Us on WhatsApp</h3>
 
-        <!-- WhatsApp Contact Button -->
-        <a href="https://wa.me/27763066328?text=Hello,%20I%20would%20like%20to%20request%20a%20quote" class="cta-button whatsapp-button">Contact Us on WhatsApp</a>
-    </section>
+      <!-- WhatsApp Contact Button -->
+      <a href="https://wa.me/27763066328?text=Hello,%20I%20would%20like%20to%20request%20a%20quote" class="cta-button whatsapp-button">Contact Us on WhatsApp</a>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Sharkbitetema. All rights reserved.</p>
-        <ul class="social-media">
-            <li><a href="https://web.facebook.com/artelkan" target="_blank" class='bx bxl-facebook-circle'></a></li>
-            <li><a href="https://www.instagram.com/sharkbite_tema/#" target="_blank" class='bx bxl-instagram-alt'></a></li>
-            <li><a href="https://x.com/SharkbiteT" target="_blank" class='bx bxl-twitter'></a></li>
-        </ul>
-    </footer>
-    
+  <footer>
+      <p>&copy; 2024 Sharkbitetema. All rights reserved.</p>
+      <ul class="social-media">
+          <li><a href="https://web.facebook.com/artelkan" target="_blank" class='bx bxl-facebook-circle'></a></li>
+          <li><a href="https://www.instagram.com/sharkbite_tema/#" target="_blank" class='bx bxl-instagram-alt'></a></li>
+          <li><a href="https://x.com/SharkbiteT" target="_blank" class='bx bxl-twitter'></a></li>
+      </ul>
+  </footer>
 
-    <script src="scripts/scripts.js"></script>
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>

@@ -2,68 +2,153 @@
     "products": [
         {
             "name": "Sharkbitetema Headwear",
-            "price": "R170",
-            "image": "images/headwear/headwear1.jpg"
+            "price": "R300",
+            "image": "images/SBT-BUCKET-HAT1.jpg"
         },
         {
-            "name": "Sharkbitetema Headwear: Vregar Edition",
-            "price": "R170",
-            "image": "images/headwear/headwear2.jpg"
+            "name": "Sharkbitetema Headwear",
+            "price": "R300",
+            "image": "images/SBT-BUCKET-HAT2.jpg"
+        },
+        {
+            "name": "Sharkbitetema Headwear",
+            "price": "R300",
+            "image": "images/SBT-BUCKET-HAT3.jpg"
         },
         {
             "name": "Sharkbitetema Headwear",
             "price": "R400",
-            "image": "images/headwear/headwear3.jpg"
+            "image": "images/SBT-BUCKET-HAT4.jpg"
         },
         {
             "name": "Sharkbitetema Headwear",
             "price": "R400",
-            "image": "images/headwear/headwear4.jpg"
+            "image": "images/SBT-BUCKET-HAT5.jpg"
         },
         {
-            "name": "Sharkbitetema T-shirt",
-            "price": "R250",
-            "image": "images/shirts/SBT-shirt1.jpg"
+            "name": "Sharkbitetema Headwear: Vregar Cap",
+            "price": "R170",
+            "image": "images/SBT-V-CAP1.jpg"
         },
         {
-            "name": "Sharkbitetema T-shirt",
+            "name": "Sharkbitetema T-shirt: Kiddies Edition",
+            "price": "R150",
+            "image": "images/SBT-KIDDIES1.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Kiddies Edition",
+            "price": "R150",
+            "image": "images/SBT-KIDDIES2.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Kiddies Edition",
+            "price": "R150",
+            "image": "images/SBT-KIDDIES3.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Army C Kiddies Edition",
+            "price": "R150",
+            "image": "images/SBT-AC-KIDDIES1.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Army C Kiddies Edition",
+            "price": "R150",
+            "image": "images/SBT-AC-KIDDIES2.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Army C Kiddies Edition",
+            "price": "R150",
+            "image": "images/SBT-AC-KIDDIES3.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Vregar Kiddies Edition",
+            "price": "R150",
+            "image": "images/SBT-V-KIDDIES1.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Vregar Kiddies Edition",
+            "price": "R150",
+            "image": "images/SBT-V-KIDDIES2.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Vregar Kiddies Edition",
+            "price": "R150",
+            "image": "images/SBT-V-KIDDIES3.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Adult Edition",
             "price": "R200",
-            "image": "images/shirts/SBT-shirt2.jpg"
+            "image": "images/SBT-TSHIRT1.jpg"
         },
         {
-            "name": "Sharkbitetema T-shirt",
+            "name": "Sharkbitetema T-shirt: Adult Edition",
             "price": "R200",
-            "image": "images/shirts/SBT-shirt3.jpg"
+            "image": "images/SBT-TSHIRT2.jpg"
         },
         {
-            "name": "Sharkbitetema T-shirt: Vregar Edition",
+            "name": "Sharkbitetema T-shirt: Adult Edition",
             "price": "R200",
-            "image": "images/shirts/SBT-shirt4.jpg"
+            "image": "images/SBT-TSHIRT3.jpg"
         },
         {
-            "name": "Sharkbitetema T-shirt: Vregar Edition",
+            "name": "Sharkbitetema T-shirt: Vregar adult Edition",
             "price": "R200",
-            "image": "images/shirts/SBT-shirt5.jpg"
+            "image": "images/SBT-VREGAR1.jpg"
         },
         {
-            "name": "Sharkbitetema T-shirt: Army C Edition",
+            "name": "Sharkbitetema T-shirt: Vregar adult Edition",
             "price": "R200",
-            "image": "images/shirts/SBT-shirt6.jpg"
+            "image": "images/SBT-VREGAR2.jpg"
         },
         {
-            "name": "Sharkbitetema T-shirt: Army C Edition",
-            "price": "R250",
-            "image": "images/shirts/SBT-shirt7.jpg"
+            "name": "Sharkbitetema T-shirt: Vregar adult Edition",
+            "price": "R200",
+            "image": "images/SBT-VREGAR3.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Army C Adult Edition",
+            "price": "R200",
+            "image": "images/SBT-ARMYC1.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Army C Adult Edition",
+            "price": "R200",
+            "image": "images/SBT-ARMYC2.jpg"
+        },
+        {
+            "name": "Sharkbitetema T-shirt: Army C Adult Edition",
+            "price": "R200",
+            "image": "images/SBT-ARMYC3.jpg"
         },
         {
             "name": "Sharkbitetema Sweater",
             "price": "R450",
-            "image": "images/sweater/SBT-sweater3.jpg"
+            "image": "images/SBT-SWEATER1.jpg"
         },
         {
             "name": "Sharkbitetema Sweater",
             "price": "R450",
-            "image": "images/sweater/SBT-sweater1.jpg"
+            "image": "images/SBT-SWEATER2.jpg"
+        },
+        {
+            "name": "Sharkbitetema Sweater",
+            "price": "R450",
+            "image": "images/SBT-SWEATER3.jpg"
+        },
+        {
+            "name": "Sharkbitetema Hoodie",
+            "price": "R450",
+            "image": "images/SBT-HOODIE1.jpg"
+        },
+        {
+            "name": "Sharkbitetema Hoodie",
+            "price": "R450",
+            "image": "images/SBT-HOODIE2.jpg"
+        },
+        {
+            "name": "Sharkbitetema Hoodie",
+            "price": "R450",
+            "image": "images/SBT-HOODIE3.jpg"
         }
     ]
 }
